@@ -1,21 +1,17 @@
 import React, { useState } from "react";
 
 export const Klik = () => {
-  const [pocetKliku, setPocetKliku] = useState(0);
+  const [cislo, setCislo] = useState(0)
 
   return (
-    <div className="joke__likes">
+    <>
+      <div className="joke__likes">
+        <button onClick={() => setCislo(cislo + 1)}>0</button>
+        <span>0</span>
+        <button onClick={() => setCislo(cislo + 1)}>0</button>
+        <span>0</span>
+      </div>
+    </>
+  )
+}
 
-      <button type="submit" onClick={() => {
-        setPocetKliku(pocetKliku + 1);
-      }}></button>
-
-      <button type="submit" onClick={() => {
-        setPocetKliku(pocetKliku + 1);
-      }}></button>
-      <button onClick={() => {
-        setPocetKliku(pocetKliku + 1);
-      }}></button>
-    </div>
-  );
-};

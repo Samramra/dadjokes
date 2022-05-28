@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './style.css';
-import { Klik } from "./Klik";
+import  { Klik } from './Klik';
 
 const App = () => (
   <div className="container">
@@ -17,6 +17,7 @@ const App = () => (
           "Donald, duck!"
         </p>
       </div>
+
       <div className="joke__likes">
         <button id="btn-up" className="btn-like btn-like--up"></button>
         <span id="likes-up" className="likes-count likes-count--up">0</span>
@@ -24,8 +25,11 @@ const App = () => (
         <span id="likes-down" className="likes-count likes-count--down">0</span>
       </div>
     </div>
+
   </div>
-);
+
+)
+
 
 createRoot(
   document.querySelector('#app')
