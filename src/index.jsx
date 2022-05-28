@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import './style.css';
 import { Klik } from "./Klik";
 
-
 const App = () => (
   <div className="container">
     <div className="joke">
@@ -20,12 +19,10 @@ const App = () => (
       </div>
       <div className="joke__likes">
         <button id="btn-up" className="btn-like btn-like--up"></button>
-        <span id="likes-up" class="likes-count likes-count--up">0</span>
-        <button id="btn-down" class="btn-like btn-like--down"></button>
-        <span id="likes-down" class="likes-count likes-count--down">0</span>
+        <span id="likes-up" className="likes-count likes-count--up">0</span>
+        <button id="btn-down" className="btn-like btn-like--down"></button>
+        <span id="likes-down" className="likes-count likes-count--down">0</span>
       </div>
-
-
     </div>
   </div>
 );

@@ -5,15 +5,17 @@ export const Klik = () => {
 
   return (
     <div className="joke__likes">
-      <button onClick={() => {
+
+      <button type="submit" onClick={() => {
         setPocetKliku(pocetKliku + 1);
       }}></button>
 
+      <button type="submit" onClick={() => {
+        setPocetKliku(pocetKliku + 1);
+      }}></button>
       <button onClick={() => {
         setPocetKliku(pocetKliku + 1);
       }}></button>
-
-
     </div>
   );
 };
